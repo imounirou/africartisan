@@ -1,3 +1,6 @@
+# Created by https://gitignore.org
+# Angular.gitignore
+
 # Angular specific
 /dist/
 /out-tsc/
