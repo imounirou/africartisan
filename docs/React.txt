@@ -1,0 +1,68 @@
+https://rdvartisans.fr/
+https://codesandbox.io/p/sandbox/fixed-navbar-xjgkh?file=%2Fsrc%2FApp.js
+https://www.youtube.com/watch?v=WbV3zRgpw_E
+
+-----------------------------------------------------------------------------------------------------------------------------------
+# Environnement de developpement sur poste Local via Vite
+# Sources : - https://blog.openreplay.com/fr/vite-create-react-app/
+            - https://github.com/vitejs/vite/issues/20287
+			
+# Tutos   : + https://www.youtube.com/watch?v=h2a0cSC1Vz8
+            + https://www.youtube.com/watch?v=f0X1Tl8aHtA
+			+ https://www.youtube.com/watch?v=G0KddxweHV0 (useEffect)
+			+ https://www.youtube.com/watch?v=GXYvtczB0pk (contexte)
+			+ https://www.youtube.com/watch?v=c02YoWR9gSY (router)
+			
+			
+			
+			https://www.youtube.com/watch?v=FRn-x2sW4oo
+			https://www.youtube.com/watch?v=Arezm_0dsZA
+			https://www.youtube.com/watch?v=hhe6Xb4Em5U&list=PLjwdMgw5TTLUEOKPg5Z5TgwAOeWkjGL69
+			https://www.youtube.com/watch?v=i_VmqnYfcho
+			https://codesandbox.io/p/sandbox/musing-haze-e9gfly?from-embed
+			https://danmarshall.github.io/google-font-to-svg-path/
+-----------------------------------------------------------------------------------------------------------------------------------
+-----> Pré requis                           : node        [node -v]
+-----> Pré requis                           : npm         [npm  -v]
+-----> Installation                         : npm create vite@latest <répertoire_application>
+                                              cd <répertoire_application>
+											  npm install
+											  npm run dev   ( Demarrage du serveur)
+											  ******** Risque de non demarrage du serveurs 
+											  ++++++++ Supprimer & regenerer le nod_module : del /f node_modules  | npm install 
+											  ++++++++  Reinstaller node                   : npm install node
+
+-----> Installation                         : vscode 
+-----> Extension de productivité            : https://www.appside.be/blog/les-15-meilleures-extensions-de-visual-studio-code-pour-les-developpeurs-react-en-2024
+                                              reactDevTool (Navigateur)
+
+-----------------------------------------------------------------------------------------------------------------------------------
+index.html                           page html dans lequel est injecté le composant App
+index.js ou main.js                  contient le code indiquant d'injecter le composant App
+App.jpx                              composant à injecter 
+-----------------------------------------------------------------------------------------------------------------------------------
+Les hooks utiles
+	import { useState } from "react"                                                  : permet de reactuliser automatiqueeent le render
+		ex : const[compteur,setCompteur] = useState(0) |  <h1>{compteur}</h1>
+		
+
+Gestion des Tableaux en Js
+	map | filter (slice, filter, sort
+	
+	props : Passage d'info composant parent vers Fille  +  Optimasation de composants ( Split du composant Pere vers Composant Fils
+	        penser à faire suivre les comportement specifiques dans le composant fils  - Raise event
+
+Plug-ins à installer pour coder plus vite :
+
+	Simple React snippets
+	Reactjs code snippets
+	Mithril Emmet
+
+
+	Dans settings.json, rajouter :"emmet.includeLanguages": { "javascript": "javascriptreact" }, "emmet.triggerExpansionOnTab": true
+
+-----------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+-----> Creation d'un template de Composant pour reutilasation [source : https://marketplace.visualstudio.com/items?itemName=thiagocordeirooo.generate-component-from-template]
+		*  Create a folder named .components-templates in your application's root directory.
+		*  Create your files with the extension .tmpl in the folder .components-templates with a tag {component_name} to be replaced with the chosen name of your component, for example:
